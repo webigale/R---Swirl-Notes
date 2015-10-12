@@ -1,0 +1,17 @@
+Commands:
+
+getwd() : determine the current working directory
+ls() : view all the objects in local workspace
+list.files() : view all the files in working directory
+?function : view help page for a given 'function'
+args(function) : view the arguments a 'function' can take
+dir.create("dirname") : create a directory in the current working called 'dirname'; use 'recursive = TRUE' for nesting
+setwd("dirname") : set your working directory to 'dirname'
+file.create("filename") : create a file in working directory called 'filename'
+file.exists("filename") : check that a file called 'filename' exists
+file.info("filename") : display information about the file called 'filenmame'
+file.rename("filename1", "filename2") : change the name of the file 'filename1' to 'filename2'
+file.remove("filename") : remove the file 'filename' from the working directory
+file.path("filename") : display the relative path to the file 'filename'
+file.path("dir1", "dir2") : display the relative path from 'dir1' to 'dir2'
+unlink('dirname') : remove directory 'dirname'; if directory is not empty, must use 'recursive = TRUE'
