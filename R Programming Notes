@@ -49,7 +49,7 @@ identical(item1, item2) : determine if 'item1' and 'item2' are identical
 vector["name"] : return the element in 'vector' called 'name'
 
 Matrices & Data Frames --
-dim(matrix) : view the dimensions of 'matrix'
+dim(matrix) : view the dimensions of 'matrix' (number of rows and columns)
 class(object) : view the class of 'object'
 matrix(data, nrow, ncol) : create a matrix of 'data' with 'nrow' number of rows and 'ncol' number of columns;
           all 'data' in matrix must be the same atomic type (numeric, logical, character, integer, or complex);
@@ -72,7 +72,7 @@ sd(numeric vector) : return standard deviation of the numbers in 'numeric vector
 new_func = function(x){commands} : create a function called 'new_func' with parameter(s) 'x' which executes 'commands'
 
 Apply Functions (lapply, sapply, vapply, tapply) --
-head(datafame) : preview the first six lines of 'dataframe'
+head(datafame, num) : view the first six (or 'num') lines of 'dataframe'
 lapply(list, function) : applies 'function' to each element 'list' and returns the results in a list 
                         of the same length as the original one; can define 'function' within lapply
 as.list(input) : transform 'input' to a list, if possible; lists are matrices that can hold more than one atomic type
@@ -90,3 +90,17 @@ character(data) : create a character vector containing 'data'
 tapply(list1, list2, function) : same as lapply, but splits 'list1' into groups based on 'list2' and applies
             'function' to the members of each group
 table(vector) : create a table of each unique value in 'vector' with the count of occurences
+
+Looking at Data --
+nrow(data) : display the number of rows in 'data'
+ncol(data) : display the number of columns in 'data'
+object.size(data) : display how much memory is occupied 'data'
+tail(datafame, num) : view the last six (or 'num') lines of 'dataframe'
+summary(dataframe) : view a summary of the distribution of each variable and how many missing values are present;
+        for numeric data, displays the minimum, 1st quartile, median, mean, 3rd quartile, and maximum;
+        for categorical variables (factors), displays the number of times each value (level) occurs in the data,
+        if too many to display, summary is truncated into catch-all category called 'Other'
+str(data) : view the structure of 'data'; the class of 'data' is at the top followed by the number of rows and columns;
+        then the name and class of each column (variable) with a preview of the contents; 
+        can be used on any type of object, including functions
+
