@@ -53,3 +53,10 @@ cbind(column, matrix) : add 'column' to 'matrix'
 data.frame(data) : create a data frame containing 'data'
 colnames(dataframe) : get/set the column names for 'dataframe'
 
+Logic --
+isTRUE(arg) : return TRUE/FALSE value of 'arg'
+xor(arg1, arg2) : (exclusive OR) return TRUE if one 'arg' is TRUE and the other is FALSE, otherwise return FALSE
+which(vector) : return vector containing only the indices of 'vector' that are TRUE
+any(vector logic test) : return TRUE if any elements of 'vector' are TRUE for 'logic test', else return FALSE
+all(vector logic test) : return TRUE if all elements of 'vector' are TRUE for 'logic test', else return FALSE
+
