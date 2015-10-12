@@ -36,4 +36,20 @@ sample(data, size) : draw a random sample of 'size' elements from 'data'
 is.na(vector) : create a vector of whether each element of 'vector' is NA
 sum(vector) : total of values in 'vector'
 
+Subsetting Vectors --
+vector[logical test] : return the elements of 'vector' for which 'logical test' is TRUE
+vector[num] : return the 'num' element of 'vector'
+vector[-num] : return all elements of 'vector' except 'num'
+names(vector) : get/set the names of the elements in 'vector'
+identical(item1, item2) : determine if 'item1' and 'item2' are identical
+vector["name"] : return the element in 'vector' called 'name'
+
+Matrices & Data Frames --
+dim(matrix) : view the dimensions of 'matrix'
+class(object) : view the class of 'object'
+matrix(data, nrow, ncol) : create a matrix of 'data' with 'nrow' number of rows and 'ncol' number of columns;
+          all 'data' in matrix must be the same atomic type (numeric, logical, character, integer, or complex)
+cbind(column, matrix) : add 'column' to 'matrix'
+data.frame(data) : create a data frame containing 'data'
+colnames(dataframe) : get/set the column names for 'dataframe'
 
