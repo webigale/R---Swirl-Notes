@@ -30,3 +30,10 @@ c(elements) : create a vector;  all 'elements' in vector must be the same atomic
 paste(vector, collapse, sep) : join the elements of 'vector' together into one continuous character string, 
               joined by the 'collapse' character(s), and/or separated by 'sep' character(s)
 
+Missing Values --
+rnorm(num) : generate 'num' random numbers from a normal distribution
+sample(data, size) : draw a random sample of 'size' elements from 'data'
+is.na(vector) : create a vector of whether each element of 'vector' is NA
+sum(vector) : total of values in 'vector'
+
+
