@@ -1,5 +1,3 @@
-Commands:
-
 Basic Building Blocks -- 
 sqrt(num) : calculate the square root of 'num'
 abs(num) : calculate the absolute value of 'num'
@@ -35,8 +33,9 @@ paste(vector, collapse, sep) : join the elements of 'vector' together into one c
               joined by the 'collapse' character(s), and/or separated by 'sep' character(s)
 
 Missing Values --
-rnorm(num) : generate 'num' random numbers from a normal distribution
-sample(data, size) : draw a random sample of 'size' elements from 'data'
+rnorm(num, mean, sd) : generate 'num' random numbers from a normal distribution; 
+                      with a mean of 'mean' and standard deviation of 'sd'; default mean = 0, sd = 1
+sample(data, size, replace) : draw a random sample of 'size' elements from 'data'; if replace is TRUE, then can have repeats
 is.na(vector) : create a vector of whether each element of 'vector' is NA
 sum(vector) : total of values in 'vector'
 
@@ -104,3 +103,15 @@ str(data) : view the structure of 'data'; the class of 'data' is at the top foll
         then the name and class of each column (variable) with a preview of the contents; 
         can be used on any type of object, including functions
 
+Simulation --
+rbinom(num, size, prob) : generate 'num' random binomial number, 'size' times, with probability of 'prob'
+......probability functions: r___ (random), d___ (density), p___ (probability), q___ (quantile)
+......probability distributions: _binom (binomial), _norm (normal), _pois (Poisson), _exp (expontial), 
+                                  _chisq (chi-squared) , _gamma (gamma), etc
+colMeans(data) : find the mean of each column in 'data'
+hist(data) : plot a histagram of 'data'
+
+Dates & Times --
+
+
+Base Graphics --
