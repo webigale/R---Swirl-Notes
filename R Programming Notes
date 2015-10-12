@@ -1,5 +1,6 @@
 Commands:
 
+Workspace --
 getwd() : determine the current working directory
 ls() : view all the objects in local workspace
 list.files() : view all the files in working directory
@@ -15,3 +16,17 @@ file.remove("filename") : remove the file 'filename' from the working directory
 file.path("filename") : display the relative path to the file 'filename'
 file.path("dir1", "dir2") : display the relative path from 'dir1' to 'dir2'
 unlink('dirname') : remove directory 'dirname'; if directory is not empty, must use 'recursive = TRUE'
+
+Sequences --
+seq(start, end, by, length) : generate a sequence from 'start' to 'end' incremented by 'by' or with given 'length'
+length(variable) : display the length of a 'variable'
+seq_along(variable) : generate a sequence the same length as 'variable'
+rep(vector, times, each) : copy either the 'vector' in full the number of 'times' OR 
+                            each element of 'vector' the number 'each'
+
+Vectors --
+c(elements) : create a vector;  all 'elements' in vector must be the same atomic type 
+              (numeric, logical, character, integer, or complex)
+paste(vector, collapse, sep) : join the elements of 'vector' together into one continuous character string, 
+              joined by the 'collapse' character(s), and/or separated by 'sep' character(s)
+
