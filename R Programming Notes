@@ -52,9 +52,10 @@ Matrices & Data Frames --
 dim(matrix) : view the dimensions of 'matrix'
 class(object) : view the class of 'object'
 matrix(data, nrow, ncol) : create a matrix of 'data' with 'nrow' number of rows and 'ncol' number of columns;
-          all 'data' in matrix must be the same atomic type (numeric, logical, character, integer, or complex)
+          all 'data' in matrix must be the same atomic type (numeric, logical, character, integer, or complex);
+          matrices are vectors with multiple rows
 cbind(column, matrix) : add 'column' to 'matrix'
-data.frame(data) : create a data frame containing 'data'
+data.frame(data) : create a data frame containing 'data'; a data frame is a list of vectors
 colnames(dataframe) : get/set the column names for 'dataframe'
 
 Logic --
@@ -69,3 +70,23 @@ Sys.Date() : display the current date
 mean(numeric vector) : return average of the numbers in 'numeric vector'
 sd(numeric vector) : return standard deviation of the numbers in 'numeric vector'
 new_func = function(x){commands} : create a function called 'new_func' with parameter(s) 'x' which executes 'commands'
+
+Apply Functions (lapply, sapply, vapply, tapply) --
+head(datafame) : preview the first six lines of 'dataframe'
+lapply(list, function) : applies 'function' to each element 'list' and returns the results in a list 
+                        of the same length as the original one; can define 'function' within lapply
+as.list(input) : transform 'input' to a list, if possible; lists are matrices that can hold more than one atomic type
+as.character(input) : transform 'input' to the character atomic type, if possible
+as.numeric(input) : transform 'input' to the numeric atomic type, if possible
+as.vector(input) : transform 'input' to a vector, if possible
+as.data.frame(input) : transform 'input' to a data frame, if possible
+sapply(list, function) : same as lapply, but simplifies the result into a vector or matrix, if possible
+range(numeric vector) : return the minimum and maximum 'numeric vector'
+unique(vector) : return 'vector' with all duplicate elements removed
+vapply(list, function, format) : same as sapply, but tries to simplfy to 'format'; if unable to simplfy, 
+            will throw an error and the operation will stop; format can also specify length of the result
+numeric(data) : create a numeric vector containing 'data'
+character(data) : create a character vector containing 'data'
+tapply(list1, list2, function) : same as lapply, but splits 'list1' into groups based on 'list2' and applies
+            'function' to the members of each group
+table(vector) : create a table of each unique value in 'vector' with the count of occurences
