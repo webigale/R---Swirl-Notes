@@ -1,5 +1,9 @@
 Commands:
 
+Basic Building Blocks -- 
+sqrt(num) : calculate the square root of 'num'
+abs(num) : calculate the absolute value of 'num'
+
 Workspace --
 getwd() : determine the current working directory
 ls() : view all the objects in local workspace
@@ -60,3 +64,8 @@ which(vector) : return vector containing only the indices of 'vector' that are T
 any(vector logic test) : return TRUE if any elements of 'vector' are TRUE for 'logic test', else return FALSE
 all(vector logic test) : return TRUE if all elements of 'vector' are TRUE for 'logic test', else return FALSE
 
+Functions --
+Sys.Date() : display the current date
+mean(numeric vector) : return average of the numbers in 'numeric vector'
+sd(numeric vector) : return standard deviation of the numbers in 'numeric vector'
+new_func = function(x){commands} : create a function called 'new_func' with parameter(s) 'x' which executes 'commands'
