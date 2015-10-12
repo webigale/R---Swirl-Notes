@@ -1,4 +1,4 @@
-# R---Swirl-Notes
+# R - Swirl Notes
 Notes from swirl courses
 
 1. R Programming
