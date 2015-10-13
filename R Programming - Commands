@@ -7,8 +7,9 @@ getwd() : determine the current working directory
 ls() : view all the objects in local workspace
 list.files() : view all the files in working directory
 ?function : view help page for a given 'function'
+help(function) : same as ?
 args(function) : view the arguments a 'function' can take
-dir.create("dirname") : create a directory in the current working called 'dirname'; use 'recursive = TRUE' for nesting
+dir.create("dirname") : create a directory in the current working dir called 'dirname'; use 'recursive = TRUE' for nesting
 setwd("dirname") : set your working directory to 'dirname'
 file.create("filename") : create a file in working directory called 'filename'
 file.exists("filename") : check that a file called 'filename' exists
@@ -124,3 +125,10 @@ strptime("vector", format) : convert character 'vector' to POSIXlt based on the 
 difftime(time1, time2, units) : find the amount of time in 'units' that passed between 'time1' and 'time2'
 
 Base Graphics --
+data(dataframe) : load data from 'dataframe' into local workspace
+plot(dataframe) : create a scatterplot of 'dataframe' using defaults
+OR plot(col1, col2, xlab, ylab, main, sub, col, xlim, ylim, pch) : create a scatterplot using
+                'col1' as the x-axis with a label called 'xlab'; 'col2' as the y-axis with a label called 'ylab'; 
+                title the plot as 'main' with a subtitle of 'sub'; color the plot based on color-code 'col';
+                limit the range of axes with 'xlim' and 'ylim'; change the shape of the points with 'pch' code
+boxplot(formula, data) : create a box plot from 'data' based on the given 'formula'
